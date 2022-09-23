@@ -19,4 +19,8 @@ class PagesController extends Controller
     public function visualiser() {
         return view('pages.visualiser');
     }
+
+    public function taches() {
+        return view('pages.taches');
+    }
 }

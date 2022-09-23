@@ -11,14 +11,12 @@
 <body>
     <nav class="nav">
         <div class="container-fluid">
-            <div class="btn group">
             <a class="navbar-brand" href="{{ url('/') }}">Kali and co</a>
-            </div>
             <ul class="nav nav-tabs">
                 <li class="nav-item"><a class="nav-link" href="{{url('/')}}">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{url('/apropos')}}">Apropos</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{url('/visualiser')}}">Récap messages</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Taches à accomplir</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url('/taches')}}">Taches à accomplir</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url('/apropos')}}">Apropos</a></li>
             </ul>
             {{-- <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Nouveau produit</a></li>

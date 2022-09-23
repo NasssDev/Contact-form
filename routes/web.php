@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\UserController;
+use App\Task;
+// use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,8 +17,8 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', [PagesController::class, 'home']);
-
 Route::get('/apropos', [PagesController::class, 'create']);
+Route::get('/taches', [PagesController::class, 'taches']);
 
 Route::get('/visualiser', [UserController::class, 'show']);
 
