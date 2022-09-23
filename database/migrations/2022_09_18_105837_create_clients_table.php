@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migration.
      *
      * @return void
      */
@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
-            $table->string('nom');
-            $table->string('prenom');
+            $table->string('lastname');
+            $table->string('firstname');
             $table->string('email');
-            $table->string('telephone');
+            $table->string('phone');
             $table->string('address');
             $table->timestamps();
         });

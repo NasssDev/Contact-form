@@ -4,25 +4,26 @@
   <title>Kalité</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"></script>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="nav">
         <div class="container-fluid">
-            <div class="navbar-header">
-            <a class="navbar-brand" href="{{URL::to('/')}}">Kali and co</a>
+            <div class="btn group">
+            <a class="navbar-brand" href="{{ url('/') }}">Kali and co</a>
             </div>
-            <ul class="nav navbar-nav">
-                <li><a href="{{URL::to('/')}}">Home</a></li>
-                <li><a href="{{URL::to('/apropos')}}">Apropos</a></li>
-                <li><a href="{{URL::to('/services')}}">Services</a></li>
-                <li><a href="https://www.udemy.com/course/laravel-creer-un-site-e-commerce-de-a-a-z-avec-carte-credit/?referralCode=D3F3089F215BB2933CFD">Apprendre plus</a></li>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="{{url('/')}}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url('/apropos')}}">Apropos</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url('/visualiser')}}">Récap messages</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Taches à accomplir</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            {{-- <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Nouveau produit</a></li>
-            </ul>
+            </ul> --}}
+        
         </div>
     </nav>
     <div class="container">

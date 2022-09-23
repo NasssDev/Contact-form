@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +14,12 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-Route::get('/', [PagesController::class, 'homee']);
+Route::get('/', [PagesController::class, 'home']);
 
-Route::get('/apropos', [PagesController::class, 'aproposs']);
+Route::get('/apropos', [PagesController::class, 'create']);
 
-Route::get('/services', [PagesController::class, 'servicess']);
+Route::get('/visualiser', [UserController::class, 'show']);
+
+// Route::ressource('/', PagesController::class);
+
+Route::post('/apropos', [UserController::class, 'store']);

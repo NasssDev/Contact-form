@@ -2,7 +2,6 @@
 
 @section('contenu')
 <div class="jumbotron">
-            <h1>Bienvenu dans le projet laravel 7.X</h1>
-        </div>
+    <h2>Bienvenue chez Kali and co</h2>
+</div>
 @endsection
-        

@@ -3,20 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Http\Requests\ClientRequest;
 
 class PagesController extends Controller
 {
     //
-    public function homee() {
+    public function home() {
         return view('pages.home');
     }
 
-    public function aproposs() {
+    public function create() {
         return view('pages.apropos');
     }
 
-    public function servicess() {
-        return view('pages.services');
+    public function visualiser() {
+        return view('pages.visualiser');
     }
 }
