@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::table('clients', function (Blueprint $table) {
             //
-            $table->string('address');
             $table->string('message');
         });
     }
@@ -29,7 +28,7 @@ return new class extends Migration
     {
         Schema::table('clients', function (Blueprint $table) {
             //
-            $table->dropColumn('address');
+            $table->dropColumn('message');
         });
     }
 };

@@ -19,10 +19,10 @@
             {{ session('status') }}
         </div>
         @endif
-        <form action="{{ url('apropos') }}" method="POST" >
+        <form action="{{ url('about') }}" method="POST" >
             @csrf
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="d-grid gap-2 col-6 mx-auto">
                     <div class="form-group">
                         <strong>Prenom:</strong>
                         <input type="text" name="lastname" class="form-control" placeholder="Nom" value="{{ old('lastname') }}">
@@ -31,7 +31,7 @@
                         @enderror
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="d-grid gap-2 col-6 mx-auto">
                     <div class="form-group">
                         <strong>Nom:</strong>
                         <input type="text" name="firstname" class="form-control" placeholder="Prenom" value="{{ old('frstname') }}">
@@ -40,7 +40,7 @@
                         @enderror
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="d-grid gap-2 col-6 mx-auto">
                     <div class="form-group">
                         <strong>Mail:</strong>
                         <input type="email" name="email" class="form-control" placeholder="Mail" value="{{ old('email') }}">
@@ -49,28 +49,28 @@
                         @enderror
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="d-grid gap-2 col-6 mx-auto">
                     <div class="form-group">
                         <strong>Telephone:</strong>
-                        <input type="text" name="phone" class="form-control" placeholder="Telephone">
+                        <input type="text" name="phone" class="form-control" placeholder="Telephone" value="{{ old('phone') }}">
                         @error('phone')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                         @enderror
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="d-grid gap-2 col-6 mx-auto">
                     <div class="form-group">
                         <strong>Adresse:</strong>
-                        <input type="text" name="address" class="form-control" placeholder="Adresse">
+                        <input type="text" name="address" class="form-control" placeholder="Adresse" value="{{ old('address') }}"
                         @error('address')
-                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                        <div class="alert alert-danger mt-1 mb-1"> {{ $message }}</div>
                         @enderror
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="d-grid gap-2 col-6 mx-auto">
                         <div class="form-group">
                             <strong>Message:</strong>
-                            <textarea style="height: 15vh" type="text" name="message" class="form-control" placeholder="Ecrivez votre message..." rows="10"></textarea>
+                            <textarea style="height: 15vh" type="text" name="message" class="form-control" placeholder="Ecrivez votre message..." rows="10" >{{ old('lastname') }}</textarea>
                             @error('address')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror

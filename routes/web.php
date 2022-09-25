@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\UserController;
 use App\Task;
-// use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,12 +16,16 @@ use App\Task;
 |
 */
 
+
 Route::get('/', [PagesController::class, 'home']);
 Route::get('/apropos', [PagesController::class, 'create']);
-Route::get('/taches', [PagesController::class, 'taches']);
+Route::get('/taches', [PagesController::class, 'navTask']);
 
 Route::get('/visualiser', [UserController::class, 'show']);
 
 // Route::ressource('/', PagesController::class);
 
-Route::post('/apropos', [UserController::class, 'store']);
+Route::post('/about', [UserController::class, 'store']);
+Route::post('/task', [UserController::class, 'saveTask']);
+
+route::delete('/task/{task_id}', [UserController::class, 'destroy']);

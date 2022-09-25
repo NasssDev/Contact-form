@@ -15,7 +15,7 @@
             <ul class="nav nav-tabs">
                 <li class="nav-item"><a class="nav-link" href="{{url('/')}}">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{url('/visualiser')}}">Récap messages</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{url('/taches')}}">Taches à accomplir</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url('/taches')}}">Taches</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{url('/apropos')}}">Apropos</a></li>
             </ul>
             {{-- <ul class="nav navbar-nav navbar-right">
