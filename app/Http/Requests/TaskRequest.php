@@ -25,7 +25,7 @@ class TaskRequest extends FormRequest
     {
         return [
             //
-            'task' => 'bail|required|between:2,255|'
+            'task' => 'bail|required|between:2,255'
         ];
     }
 }
