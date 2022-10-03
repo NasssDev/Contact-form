@@ -19,5 +19,9 @@ class PDFController extends Controller
         return $pdf->stream();
         //download('tutsmake.pdf');
     }
+
+    public function pdfDDER() {
+        $pdf = new PDF();
+    }
 }
 

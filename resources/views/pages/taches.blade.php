@@ -47,6 +47,12 @@
                                 <button class="btn btn-secondary">PDF</button>
                             </form>
                         </td>
+                        <td>
+                            <form action="{{ route('create_pdfDDER') }}" method="GET" target="_blank">
+                                @csrf
+                                <button class="btn btn-secondary">PDF DDER</button>
+                            </form>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

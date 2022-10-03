@@ -23,6 +23,7 @@ Route::get('/apropos', [PagesController::class, 'create'])->name('formMessageLin
 Route::get('/taches', [PagesController::class, 'navTask'])->name('taskLink');
 
 Route::get('create_pdf', [PDFController::class, 'index'])->name('create_pdf');
+Route::get('create_pdfDDER', [PDFController::class, 'pdfDDER']);
 
 Route::get('/visualiser', [UserController::class, 'show'])->name('showListLink');
 
